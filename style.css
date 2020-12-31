@@ -1,0 +1,211 @@
+
+
+#container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgb(153, 153, 153);
+}
+
+#elements {
+    display: grid;
+  grid-template-columns: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+  grid-template-areas: ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . .";
+
+}
+
+.FizzBuzz {
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:white;
+    background-color: #62ff32;
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#000;
+    text-align:center;
+    
+}
+
+.Fizz {
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:white;
+    background-color: #ff3262;
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#000;
+    text-align:center;
+}
+
+.Buzz {
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:white;
+    background-color: #ff8132;
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#000;
+    text-align:center;
+}
+
+.Empty {
+    display: grid;
+    width: 90px;
+    height:90px;
+    margin:10px;
+    color:white;
+    background-color: #3292ff;
+    border-radius:8px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#000;
+    text-align:center;
+}
+
+#sizeBox {
+    background-color: rgb(230, 230, 230);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sliders {
+    width: 100%;
+}
+
+.sliderLabel {
+
+}
+
+#elWidth {
+    width: 45%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;   
+}
+
+#elHeight {
+    width: 45%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;  
+}
+
+#menuBox {
+    display: grid;
+    background-color: rgb(210, 210, 210);
+}
+
+#valueBox {
+    background-color: rgb(220, 220, 220);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#colorBox {
+    background-color: rgb(230, 230, 230);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#customBox {
+    background-color: rgb(235, 235, 235);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+h3 {
+    display: inline;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#generate {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #3399ff;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#clear {
+    padding: 3px;
+    background-color: #ff6633;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#generate2 {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #00e600;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#generate:hover {
+    background-color: #3366ff;
+}
+
+#clear:hover {
+    background-color: #ff3333;
+}
+
+#generate2:hover {
+    background-color: #00b300;
+}
+
+@media (max-width: 992px) {
+    #container {
+        width: 500px;
+        height: 100%;
+        margin : 0 auto;
+        background-color: rgb(153, 153, 153);
+    }
+
+    #elements {
+        display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . .";
+    }
+
+    input[type=number]{
+        width: 100px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    #container {
+        width: 300px;
+        height: 100%;
+        margin : 0 auto;
+        background-color: rgb(153, 153, 153);
+    }
+
+    #elements {
+        display: inline;
+    }
+
+    input[type=number]{
+        width: 50px;
+    }
+
+}

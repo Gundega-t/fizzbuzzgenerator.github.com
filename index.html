@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>HomeWork</title>
+</head>
+<body>
+    
+    <main id="container">
+        <div id="valueBox">
+            <h3>Start value :</h3><input id="startValue" type="number" value="1">
+            <h3>End value :</h3><input id="endValue" type="number" value="100">
+            <h3>Fizz value :</h3><input id="fizzValue" type="number" value="3">
+            <h3>Buzz value :</h3><input id="buzzValue" type="number" value="5">
+        </div>
+        <div id="colorBox">
+            <h3>Fizz color :</h3><input id="fizzColor" type="color" value="#ff3262">
+            <h3>Buzz color :</h3><input id="buzzColor" type="color" value="#ff8132">
+            <h3>FizzBuzz color :</h3><input id="fizzBuzzColor" type="color" value="#62ff32">
+            <h3>None color :</h3><input id="noneColor" type="color" value="#3292ff">
+        </div>
+        <div id="sizeBox">
+                <div class="sliders">
+                    <input type="range" min="10" max="90" value="90" placeholder="width" id="elWidth" name ="widthLabel">
+                        <div class="sliderLabel">
+                            <p>Width : <span id="elWidthOutput"></span></p>
+                        </div>
+                </div>
+                <div class="sliders">
+                    <input type="range" min="10" max="90" value="90" id="elHeight" name="heightLabel">
+                        <div class="sliderLabel">
+                            <p>Height : <span id="elHeightOutput"></span></p>
+                        </div>
+                </div>
+        </div>
+            </div>
+        <div id="menuBox">
+            <button type="submit" id="generate">Generate Default Div's</button><br>
+            <button type="submit" id="clear">Clear Div's</button><br>
+            <button type="submit" id="generate2">Generate custom Div's</button><br>
+        </div>
+        <div id ="elements"></div>
+    </main>
+
+</body>
+</html>
