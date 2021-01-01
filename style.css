@@ -1,10 +1,73 @@
+nav {
+    background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    font-family: cursive;
 
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgba(112, 110, 110, 0.842);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .3s;
+  }
+  nav ul li a:hover {
+    color:rgba(56, 56, 56, 0.979);
+  }
+  
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgba(255, 255, 255, 0.541);
+  height: 3px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+} 
 
 #container {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    background-color: rgb(153, 153, 153);
+    background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(122,122,122);
+    color: linear-gradient(90deg, rgba(122,122,122,1) 0%, rgba(218,218,218,1) 56%);
 }
 
 #elements {
@@ -27,7 +90,14 @@
     border-width:1px;
     border-color:#000;
     text-align:center;
+
+    transition: all 0.2s linear;
+    background: linear-gradient(to top, #56B870 0%,#a5c956 100%);
     
+}
+
+.FizzBuzz:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .Fizz {
@@ -42,6 +112,12 @@
     border-width:1px;
     border-color:#000;
     text-align:center;
+    transition: all 0.2s linear;
+    background: linear-gradient(to top, #C655BE 0%,#cf0404 100%);
+}
+
+.Fizz:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .Buzz {
@@ -56,6 +132,12 @@
     border-width:1px;
     border-color:#000;
     text-align:center;
+    transition: all 0.2s linear;
+    background: linear-gradient(to top, #F3AAAA 0%,#febf04 100%);
+}
+
+.Buzz:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .Empty {
@@ -64,16 +146,23 @@
     height:90px;
     margin:10px;
     color:white;
-    background-color: #3292ff;
+    background-color: #51a2ff;
     border-radius:8px;
     border-style:solid;
     border-width:1px;
     border-color:#000;
     text-align:center;
+    transition: all 0.2s linear;
+    background: linear-gradient(to top, #aae2f3 0%,#4c7fdf 100%);
+}
+
+.Empty:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 #sizeBox {
-    background-color: rgb(230, 230, 230);
+    background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -104,45 +193,49 @@
 
 #menuBox {
     display: grid;
-    background-color: rgb(210, 210, 210);
+    background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
 }
 
 #valueBox {
-    background-color: rgb(220, 220, 220);
+    background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #colorBox {
-    background-color: rgb(230, 230, 230);
+    background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #customBox {
     background-color: rgb(235, 235, 235);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
 }
 h3 {
     display: inline;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 100;
+    justify-content: center;
 }
 
 #generate {
-    padding: 3px;
+    padding: 10px;
     border-radius: 5px;
-    background-color: #3399ff;
+    background-color: #464646;
     color: #fff;
     font-weight: bold;
     transition: 0.3s;
 }
 
 #clear {
-    padding: 3px;
-    background-color: #ff6633;
+    padding: 10px;
+    background-color: #464646;
     border-radius: 5px;
     color: #fff;
     font-weight: bold;
@@ -150,24 +243,24 @@ h3 {
 }
 
 #generate2 {
-    padding: 3px;
+    padding: 10px;
     border-radius: 5px;
-    background-color: #00e600;
+    background-color: #464646;
     color: #fff;
     font-weight: bold;
     transition: 0.3s;
 }
 
 #generate:hover {
-    background-color: #3366ff;
+    background-color: #5b83f8;
 }
 
 #clear:hover {
-    background-color: #ff3333;
+    background-color: #f33952d7;
 }
 
 #generate2:hover {
-    background-color: #00b300;
+    background-color: #46b346;
 }
 
 @media (max-width: 992px) {
@@ -175,7 +268,8 @@ h3 {
         width: 500px;
         height: 100%;
         margin : 0 auto;
-        background-color: rgb(153, 153, 153);
+        background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
     }
 
     #elements {
@@ -197,7 +291,8 @@ h3 {
         width: 300px;
         height: 100%;
         margin : 0 auto;
-        background-color: rgb(153, 153, 153);
+        background: rgb(206,233,255);
+background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
     }
 
     #elements {
