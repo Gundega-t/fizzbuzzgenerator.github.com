@@ -1,6 +1,17 @@
+body{
+    background-image: url("images/honeycomb.jpg");
+    background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+}
 nav {
-    background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 1px;
@@ -58,16 +69,16 @@ nav.stroke ul li a:hover:after {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
 }
 
 h1{
     text-align: center;
     font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(122,122,122);
-    color: linear-gradient(90deg, rgba(122,122,122,1) 0%, rgba(218,218,218,1) 56%);
+    color: rgb(247, 244, 244);
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px #613b09;
 }
 
 #elements {
@@ -84,14 +95,16 @@ h1{
     height:90px;
     margin:10px;
     color:white;
-    background-color: #62ff32;
+    background-color: #ffdc41a8;
     border-radius:8px;
     border-style:solid;
     border-width:1px;
     border-color:#000;
     text-align:center;
     transition: all 0.2s linear;
-    background: linear-gradient(to top, #56B870 0%,#a5c956 100%);
+    /*background: linear-gradient(to top, #56B870 0%,#a5c956 100%);*/
+    background-image: url(images/honeyfizbuz.jpg);
+    
     
 }
 
@@ -160,8 +173,8 @@ h1{
 }
 
 #sizeBox {
-    background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -172,6 +185,7 @@ background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 2
 
 .sliderLabel {
     color: #110911;
+    font-family: 'Amatic SC', cursive;
 
 
 }
@@ -194,20 +208,20 @@ background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 2
 
 #menuBox {
     display: grid;
-    background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
 }
 
 #valueBox {
-    background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #colorBox {
-    background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -223,6 +237,8 @@ h3 {
     font-size: 1em;
     font-weight: 100;
     justify-content: center;
+    font-family: 'Amatic SC', cursive;
+
 }
 
 #generate {
@@ -253,15 +269,15 @@ h3 {
 }
 
 #generate:hover {
-    background-color: #5b83f8;
+    background-color: #f0ca22ef;
 }
 
 #clear:hover {
-    background-color: #f33952d7;
+    background-color: #f0ca22ef;
 }
 
 #generate2:hover {
-    background-color: #46b346;
+    background-color: #f0ca22ef;
 }
 
 @media (max-width: 992px) {
@@ -269,8 +285,8 @@ h3 {
         width: 500px;
         height: 100%;
         margin : 0 auto;
-        background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+        background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     }
 
     #elements {
@@ -292,8 +308,8 @@ background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 2
         width: 300px;
         height: 100%;
         margin : 0 auto;
-        background: rgb(206,233,255);
-background: linear-gradient(90deg, rgba(206,233,255,1) 0%, rgba(233,233,233,1) 27%, rgba(254,255,235,1) 65%, rgba(255,200,202,1) 100%);
+        background: rgba(203, 127, 65, 0.678);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     }
 
     #elements {
