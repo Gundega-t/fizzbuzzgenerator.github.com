@@ -7,9 +7,13 @@ body{
   background-size: cover;
 }
 
-
+#menuBox {
+    display: grid;
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
 }
-nav {
+
+#menuBox {
     background: rgb(203,128,65);
 background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     text-align: center;
@@ -19,14 +23,14 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 
 }
 
-nav ul {
+#menuBox ul {
     list-style: none;
     text-align: center;
   }
-  nav ul li {
+  #menuBox ul li {
     display: inline-block;
   }
-  nav ul li a {
+  #menuBox ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -35,35 +39,7 @@ nav ul {
     text-transform: uppercase;
     margin: 0 10px;
   }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all .3s;
-  }
-  nav ul li a:hover {
-    color:rgba(56, 56, 56, 0.979);
-  }
-  
-nav.stroke ul li a,
-nav.fill ul li a {
-  position: relative;
-}
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: rgba(255, 255, 255, 0.541);
-  height: 3px;
-}
-nav.stroke ul li a:hover:after {
-  width: 100%;
-} 
+
 
 #container {
     width: 1200px;
@@ -78,7 +54,7 @@ h1{
     font-size: 3em;
     color: rgb(247, 244, 244);
     font-family: 'Indie Flower', cursive;
-    text-shadow: 2px 2px #613b09;
+    text-shadow: 2px 2px #613b0996;
 }
 
 #elements {
@@ -91,20 +67,18 @@ h1{
 
 .FizzBuzz {
     display: grid;
-    width: 90px;
-    height:90px;
+    width: 100px;
+    height:100px;
     margin:10px;
     color:white;
-    background-color: #ffdc41a8;
     border-radius:8px;
     border-style:solid;
     border-width:1px;
     border-color:#000;
     text-align:center;
     transition: all 0.2s linear;
-    /*background: linear-gradient(to top, #56B870 0%,#a5c956 100%);*/
+    background-color: #21a83e96;
     background-image: url(images/honeyfizbuz.jpg);
-    
     
 }
 
@@ -114,18 +88,17 @@ h1{
 
 .Fizz {
     display: grid;
-    width: 90px;
-    height:90px;
+    width: 100px;
+    height:100px;
     margin:10px;
     color:white;
-    background-color: #ff3262;
+    background-color: #90589ebb;
     border-radius:8px;
     border-style:solid;
     border-width:1px;
     border-color:#000;
     text-align:center;
     transition: all 0.2s linear;
-    background: linear-gradient(to top, #C655BE 0%,#cf0404 100%);
 }
 
 .Fizz:hover {
@@ -134,18 +107,18 @@ h1{
 
 .Buzz {
     display: grid;
-    width: 90px;
-    height:90px;
+    width: 100px;
+    height:100px;
     margin:10px;
     color:white;
-    background-color: #ff8132;
+    background-color: #dbcd05;
+    background-image: url(images/bee2.png);
     border-radius:8px;
     border-style:solid;
     border-width:1px;
     border-color:#000;
     text-align:center;
     transition: all 0.2s linear;
-    background: linear-gradient(to top, #F3AAAA 0%,#febf04 100%);
 }
 
 .Buzz:hover {
@@ -154,18 +127,17 @@ h1{
 
 .Empty {
     display: grid;
-    width: 90px;
-    height:90px;
+    width: 100px;
+    height:100px;
     margin:10px;
     color:white;
-    background-color: #51a2ff;
+    background-color: #ff9900;
     border-radius:8px;
     border-style:solid;
     border-width:1px;
     border-color:#000;
     text-align:center;
     transition: all 0.2s linear;
-    background: linear-gradient(to top, #aae2f3 0%,#4c7fdf 100%);
 }
 
 .Empty:hover {
@@ -175,8 +147,8 @@ h1{
 #sizeBox {
     background: rgb(203,128,65);
 background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .sliders {
@@ -191,7 +163,7 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 }
 
 #elWidth {
-    width: 45%;
+    width: 30%;
     height: 15px;
     border-radius: 5px;  
     background: #d3d3d3; 
@@ -199,18 +171,14 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 }
 
 #elHeight {
-    width: 45%;
+    width: 30%;
     height: 15px;
     border-radius: 5px;  
     background: #d3d3d3;
     outline: none;  
 }
 
-#menuBox {
-    display: grid;
-    background: rgb(203,128,65);
-background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
-}
+
 
 #valueBox {
     background: rgb(203,128,65);
