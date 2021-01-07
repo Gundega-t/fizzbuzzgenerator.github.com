@@ -12,6 +12,11 @@ function innit () {
     submitCustom.addEventListener("click", onClickCustom);
 }
 
+$("#restart").on("click", function() {
+	$("#gameover").hide();
+	init();
+});
+
 var sl1 = document.getElementById("elWidth");
 var sl1Value = document.getElementById("elWidthOutput");
 sl1.innerHTML = sl1Value.value;
