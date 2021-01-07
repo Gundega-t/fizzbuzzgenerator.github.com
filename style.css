@@ -5,6 +5,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
 #menuBox {
@@ -26,6 +27,7 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 #menuBox ul {
     list-style: none;
     text-align: center;
+    
   }
   #menuBox ul li {
     display: inline-block;
@@ -152,15 +154,15 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 }
 
 .sliders {
-    width: 100%;
+    width: 300%;
 }
+
 
 .sliderLabel {
     color: #110911;
     font-family: 'Amatic SC', cursive;
-
-
 }
+
 
 #elWidth {
     width: 30%;
@@ -185,6 +187,7 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 #colorBox {
