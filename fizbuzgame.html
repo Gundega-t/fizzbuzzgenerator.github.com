@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="game.js" defer></script>
+    <link rel="stylesheet" href="game.css">
+    <title>Game</title>
+
+</head>
+<body>
+
+        <header>
+            <div id="score">score: <span>0</span></div>
+            <div id="time">time: <span>0</span></div>
+        </header>
+        
+        <button id="start">START GAME</button>
+        
+        <div id="number">???</div>
+        <button class="answer" data-modulo="3">FIZZ</button>
+        <button class="answer" data-modulo="5">BUZZ</button>
+        <button class="answer" data-modulo="15">FIZZBUZZ</button>
+        <button class="answer" data-modulo="0">NEITHER</button>
+        
+        <div id="gameover">
+            <h1>GAME OVER</h1>
+            <h2></h2>
+            <div class="score">strict score: <span></span></div>
+            <div class="attempts">attempts: <span></span></div>
+            <div class="matched">matched: <span></span></div>
+            <div class="precision">precision: <span></span></div>
+            <div class="finalscore">final score: <span></span></div>
+            <button id="restart">NEW GAME</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script id="rendered-js">

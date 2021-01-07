@@ -107,6 +107,10 @@ h1{
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.gridbuzz {
+    background-image: url(gridbuzz.scss) ;
+}
+
 .Buzz {
     display: grid;
     width: 100px;
@@ -195,6 +199,7 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
     padding-top: 10px;
     padding-bottom: 10px;
+    position: center;
 }
 
 #customBox {
