@@ -8,6 +8,68 @@ body{
 
 }
 
+
+nav {
+    background: rgb(203,128,65);
+background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53%, rgba(182,131,61,1) 100%);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: cursive;
+
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgba(224, 158, 13, 0.877);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size:xx-large;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color:rgba(138, 67, 0, 0.979);
+  }
+  
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgb(224,86,86);
+  background: linear-gradient(90deg, rgba(224,86,86,0.8743872549019608) 5%, rgba(237,238,67,0.8799894957983193) 94%);
+  height: 5px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+
+
 #menuBox {
     display: grid;
     background: rgb(203,128,65);
@@ -52,7 +114,6 @@ background: linear-gradient(90deg, rgba(203,128,65,1) 0%, rgba(255,211,133,1) 53
 }
 
 h1{
-    padding-top: 15px;
     text-align: center;
     font-size: 4em;
     color: rgb(247, 244, 244);
@@ -67,6 +128,64 @@ h1{
   grid-template-areas: ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . ." ". . . . . . . . . .";
 
 }
+
+
+/*three bees*/
+
+.beebox {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    color: #ffffff;
+    
+}
+.beeimage {
+    display: block; 
+    margin-left: auto; 
+    margin-right:auto; 
+    width: 50%;
+
+
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 12%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff00;
+    display: block; 
+    margin-left: auto; 
+    margin-right:auto; 
+    width: 100%;
+  }
+  
+.beebox:hover .overlay {
+    opacity: 1;
+  }
+  
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+/*three bees*/
+
+
 
 .FizzBuzz {
     display: grid;
